@@ -1,6 +1,6 @@
 {
-  "name": "open-translate-api",
-  "version": "1.3.5",
+  "name": "@jajabenit250/open-translate-api",
+  "version": "1.4.0",
   "description": "A free and unlimited API for Google Translate（contains single and multiple） 💵🚫",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -27,7 +27,6 @@
     "url": "https://github.com/Jajabenit250/open-transtate-api/issues"
   },
   "homepage": "https://github.com/Jajabenit250/open-transtate-api#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.7.4",
