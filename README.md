@@ -14,7 +14,7 @@ A free and unlimited API for Google Translate（support single text and Multi-se
 # Install
 
 ```shell
-npm install --save @jajabenit250/open-translate-api
+npm install --save @jajabenit250/open-translate-api@1.4.0
 ```
 
 # Why this repo ？
@@ -30,15 +30,15 @@ I don't want to translate all the text first and I'd like to translate segment b
 
 ![1565516309452.jpg](https://s3.qiufengh.com/blog/1565516309452.jpg)
 
-In the existing library, if I want to translate multi-segment text, I have to request multiple times.(like [google-translate-api](https://github.com/matheuss/google-translate-api))
+In the existing library, if I want to translate multi-segment text, I have to request multiple times.(like [@jajabenit250/open-translate-api](https://github.com/jajabenit250/open-translate-api))
 
-So I have to use the new api to implement, so the `google-translate-open-api` is born.
+So I have to use the new api to implement, so the `@jajabenit250/open-translate-api` is born.
 
 # Usage
 
 Single segment
 ```javascript
-import translate from 'google-translate-open-api';
+import translate from '@jajabenit250/open-translate-api';
 const result = await translate(`I'm fine.`, {
   tld: "cn",
   to: "zh-CN",
@@ -50,7 +50,7 @@ const data = result.data[0];
 
 Multi-segment text
 ```javascript
-import translate from 'google-translate-open-api';
+import translate from '@jajabenit250/open-translate-api';
 
 const result = await translate([`I'm fine.`, `I'm ok.`], {
   tld: "cn",
@@ -65,7 +65,7 @@ const data = result.data[0];
 Multi-segment text contains mylti-sentence.
 
 ```javascript
-import translate, { parseMultiple } from 'google-translate-open-api';
+import translate, { parseMultiple } from '@jajabenit250/open-translate-api';
 
 const result = await translate([`I'm fine. And you?`,`I'm ok.`], {
   tld: "cn",
@@ -114,7 +114,7 @@ const data = result.data[0];
 For commonJS
 
 ```javascript
-const translate = require('google-translate-open-api').default;
+const translate = require('@jajabenit250/open-translate-api').default;
 ```
 
 # API
